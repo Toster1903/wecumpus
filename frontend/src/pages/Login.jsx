@@ -146,7 +146,7 @@ const Login = ({ onLoginSuccess }) => {
       <div className="premium-card">
         <div className="premium-eyebrow">Wecampus · Sunset</div>
         <h1 className="premium-title">
-          {isLogin ? <>Welcome <em>back.</em></> : <>Hello, <em>стажёр.</em></>}
+          {isLogin ? <>С возвращением, <em>студент.</em></> : <>Привет, <em>стажёр.</em></>}
         </h1>
         <p className="premium-sub">
           {isLogin
@@ -156,20 +156,20 @@ const Login = ({ onLoginSuccess }) => {
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
           <div>
-            <label htmlFor="email" style={labelStyle}>Email</label>
+            <label htmlFor="email" style={labelStyle}>Почта</label>
             <input
               id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="premium-input"
-              placeholder="you@example.com"
+              placeholder="ты@пример.рф"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="password" style={labelStyle}>Password</label>
+            <label htmlFor="password" style={labelStyle}>Пароль</label>
             <input
               id="password"
               type="password"

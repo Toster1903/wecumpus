@@ -18,9 +18,9 @@ const Suggestions = ({ items = [], onOpenProfile, onSayHi }) => {
     <section className="section">
       <div className="section-head">
         <h2 className="section-title">
-          Picked for <em>you</em>
+          Подобрано <em>для тебя</em>
         </h2>
-        <span className="section-meta">By AI Agent · {items.length}</span>
+        <span className="section-meta">AI Агент · {items.length}</span>
       </div>
       <div className="suggestions-grid">
         {items.slice(0, 3).map((p, idx) => {
@@ -32,8 +32,8 @@ const Suggestions = ({ items = [], onOpenProfile, onSayHi }) => {
               onClick={() => onOpenProfile?.(p.user_id || p.id)}
             >
               <div className="suggestion-head">
-                <span className="suggestion-tag live">Match</span>
-                <span className="suggestion-time">{p.age ? `${p.age} y.o.` : ''}</span>
+                <span className="suggestion-tag live">Мэтч</span>
+                <span className="suggestion-time">{p.age ? `${p.age} л.` : ''}</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.9rem' }}>
                 {p.avatar_url ? (
@@ -69,7 +69,7 @@ const Suggestions = ({ items = [], onOpenProfile, onSayHi }) => {
                     onSayHi?.(p.user_id || p.id);
                   }}
                 >
-                  Say hi →
+                  Написать →
                 </button>
               </div>
             </div>

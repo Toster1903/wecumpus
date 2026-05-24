@@ -13,7 +13,7 @@ const AgentHero = ({ name, onPrimary, onAgent }) => {
     <section className="agent-hero animate-page-in">
       <span className="agent-tag">
         <span className="agent-tag-pulse" />
-        AI Agent · Online
+        AI Агент · Онлайн
       </span>
       <h1 className="hero-greeting">
         {greeting}, <em>{firstName}.</em>
@@ -27,7 +27,7 @@ const AgentHero = ({ name, onPrimary, onAgent }) => {
           Открыть мои мэтчи
         </button>
         <button type="button" className="btn-meta" onClick={onAgent}>
-          ⌘K · ask agent
+          ⌘K · открыть агента
         </button>
       </div>
     </section>

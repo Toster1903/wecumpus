@@ -125,7 +125,7 @@ const ProfileSetup = ({ onProfileCreated, onLogout }) => {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.6rem' }}>
             <div>
               <div className="label-mono" style={{ marginBottom: '0.4rem', color: 'var(--elegant-text-muted)' }}>
-                Step 1 · Profile
+                Шаг 1 · Профиль
               </div>
               <h1 className="elegant-title">Создайте ваш профиль</h1>
               <p className="elegant-sub" style={{ marginBottom: 0 }}>
@@ -144,7 +144,7 @@ const ProfileSetup = ({ onProfileCreated, onLogout }) => {
                   value={fullName}
                   onChange={(event) => setFullName(event.target.value)}
                   className="elegant-input"
-                  placeholder="Например, Maya Chen"
+                  placeholder="Например, Иван Петров"
                   required
                 />
               </div>
@@ -240,7 +240,7 @@ const ProfileSetup = ({ onProfileCreated, onLogout }) => {
             <InterestsInput
               interests={interests}
               onChange={setInterests}
-              placeholder="Например, chess"
+              placeholder="Например, шахматы"
               helperText="Нажмите Enter или кнопку +, чтобы добавить интерес"
             />
 

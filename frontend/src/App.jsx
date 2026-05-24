@@ -17,12 +17,12 @@ import api from './api/axios';
 import { clearAuthToken, getAuthToken, setAuthToken } from './utils/authToken';
 
 const NAV_ITEMS = [
-  { id: 'dashboard', label: 'Home' },
-  { id: 'matches',   label: 'Match' },
-  { id: 'inbox',     label: 'Inbox' },
+  { id: 'dashboard', label: 'Главная' },
+  { id: 'matches',   label: 'Мэтчи' },
+  { id: 'inbox',     label: 'Чаты' },
   { id: 'posts',     label: 'Лента' },
   { id: 'calendar',  label: 'Календарь' },
-  { id: 'profile',   label: 'Profile' },
+  { id: 'profile',   label: 'Профиль' },
 ];
 
 const APP_TO_PAGE = {
@@ -223,7 +223,7 @@ const Nav = ({ currentPage, setCurrentPage, onLogout, initials }) => (
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
         <div className="app-nav-user">
           <span className="app-nav-dot" />
-          online
+          онлайн
         </div>
         <div
           className="avatar-circle avatar-32"
@@ -234,7 +234,7 @@ const Nav = ({ currentPage, setCurrentPage, onLogout, initials }) => (
           {initials}
         </div>
         <button type="button" className="app-nav-logout" onClick={onLogout}>
-          Logout
+          Выйти
         </button>
       </div>
     </div>

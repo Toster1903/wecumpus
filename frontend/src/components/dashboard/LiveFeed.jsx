@@ -42,9 +42,9 @@ const LiveFeed = ({ items = [], onOpen, onItemClick }) => {
       <div className="feed-head">
         <div className="feed-title">
           <span className="feed-pulse" />
-          Live on campus
+          Жизнь кампуса
         </div>
-        <div className="feed-meta">Updated · just now</div>
+        <div className="feed-meta">Обновлено · только что</div>
       </div>
       <div className="feed-list">
         {items.length === 0 && (
@@ -87,9 +87,9 @@ const LiveFeed = ({ items = [], onOpen, onItemClick }) => {
         })}
       </div>
       <div className="feed-foot">
-        <span>Stream · {items.length} events</span>
+        <span>Поток · {items.length} событий</span>
         <button type="button" className="feed-link" onClick={onOpen}>
-          Open feed →
+          Открыть ленту →
         </button>
       </div>
     </div>

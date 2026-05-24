@@ -64,3 +64,4 @@ pnpm-debug.log*
 frontend/.env
 frontend/.env.*
 !frontend/.env.example
+CLAUDE.md
