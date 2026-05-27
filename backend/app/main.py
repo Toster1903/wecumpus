@@ -58,7 +58,7 @@ def init_database() -> None:
         logger.exception("Database initialization failed")
 
 limiter = Limiter(key_func=get_remote_address)
-app = FastAPI(title="Wecupmus API", docs_url=None, redoc_url=None)
+app = FastAPI(title="Wecupmus API", docs_url="/docs", redoc_url=None)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
